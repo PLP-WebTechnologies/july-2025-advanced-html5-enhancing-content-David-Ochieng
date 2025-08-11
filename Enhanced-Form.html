@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Fundraiser Program - RSVP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+        header, section, footer {
+            margin-bottom: 2em;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #999;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        fieldset {
+            margin-bottom: 1.5em;
+            border: 1px solid #ccc;
+            padding: 1em;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+        }
+        input[type="submit"], input[type="reset"] {
+            width: auto;
+            margin-top: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Annual Public Fundraiser Program</h1>
+        <p>Join us for an exclusive evening dedicated to raising funds for community development projects. Your presence and contribution will make a lasting impact.</p>
+    </header>
+
+    <!-- Event Highlights -->
+    <section>
+        <h2>Event Highlights</h2>
+        <ul>
+            <li>Gourmet Dinner & Live Music</li>
+            <li>Keynote Speech from Our Founder</li>
+            <li>Charity Auction of Exclusive Items</li>
+            <li>Networking with Philanthropic Leaders</li>
+        </ul>
+
+        <h3>How to Prepare</h3>
+        <ol>
+            <li>Dress in formal evening wear.</li>
+            <li>Bring your invitation card for entry.</li>
+            <li>Prepare your donation pledge.</li>
+            <li>Arrive 30 minutes early for networking.</li>
+        </ol>
+    </section>
+
+    <!-- Event Schedule Table -->
+    <section>
+        <h2>Event Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6:00 PM</td>
+                    <td>Welcome & Registration</td>
+                    <td>Main Hall Entrance</td>
+                </tr>
+                <tr>
+                    <td>6:30 PM</td>
+                    <td>Opening Remarks</td>
+                    <td>Grand Ballroom</td>
+                </tr>
+                <tr>
+                    <td>7:00 PM</td>
+                    <td>Gourmet Dinner</td>
+                    <td>Dining Area</td>
+                </tr>
+                <tr>
+                    <td>8:00 PM</td>
+                    <td>Live Auction</td>
+                    <td>Grand Ballroom</td>
+                </tr>
+                <tr>
+                    <td>9:00 PM</td>
+                    <td>Closing Speech & Thank You</td>
+                    <td>Grand Ballroom</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Event Media</h2>
+        <p>With togetherness we can transform our home to a better place:</p>
+        <img src="https://images.pexels.com/photos/3280130/pexels-photo-3280130.jpeg" alt="TeamWork" width="300" height="250">
+        
+        <video controls width="500">
+            <source src="3392357-sd_426_240_30fps.mp4" type="video/mp4" alt="community">
+            Your browser does not support the video element.
+        </video>
+
+        <audio controls>
+            <source src="Ca Flingue(MP3_320K).mp3" type="audio/mp3" alt="vibe">
+             Your browser does not support the audio element.
+        </audio>
+
+    </section>
+
+    <!-- RSVP Form -->
+    <section>
+        <h2>RSVP for the Fundraiser</h2>
+        <form action="#" method="post" autocomplete="on">
+            
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Jane Smith" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Attendance Details</legend>
+                
+                <label for="guests">Number of Guests (excluding yourself):</label>
+                <input type="number" id="guests" name="guests" min="0" max="5" value="0" required>
+
+                <label for="meal">Preferred Meal Option:</label>
+                <select id="meal" name="meal" required>
+                    <option value="">Select...</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="newsletter" value="yes">
+                    Receive future event updates
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Special Notes</legend>
+                <label for="comments">Any special requirements or messages:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Allergies, seating preferences, etc."></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit RSVP">
+            <input type="reset" value="Clear Form">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Public Fundraiser Committee | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
